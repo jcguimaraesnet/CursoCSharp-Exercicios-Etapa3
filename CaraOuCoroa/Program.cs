@@ -14,10 +14,16 @@ namespace CaraOuCoroa
             var numeroAleatorio = random.Next(1, 3);
 
             Console.Write("Resultado da jogada: ");
-            if (numeroAleatorio == 1)
-                Console.WriteLine("Cara!");
-            else
-                Console.WriteLine("Coroa!");
+
+            //var cara = numeroAleatorio == 1;
+            //var coroa = numeroAleatorio == 2;
+            //if (cara)
+            //    Console.WriteLine("Cara!");
+            //else if (coroa)
+            //    Console.WriteLine("Coroa!");
+
+            var moeda = (numeroAleatorio == 1) ? "Cara" : "Coroa";
+            Console.WriteLine($"{moeda}!");
         }
     }
 }
